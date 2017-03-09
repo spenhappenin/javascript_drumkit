@@ -1,6 +1,6 @@
 html {
   font-size: 10px;
-  background: url(https://s-media-cache-ak0.pinimg.com/originals/bd/32/68/bd3268654edc7fdb69d6548824a8fe89.jpg) bottom center;
+  background: url(http://nebula.wsimg.com/12f32c5473bf86d8f987dc0df8d7fda1?AccessKeyId=F75AE179C4DFC63F5B63&disposition=0&alloworigin=1) bottom center;
   background-size: cover;
 }
 body,html {
@@ -18,7 +18,6 @@ body,html {
 
 .keys {
   display: flex;
-  /*flex: 1;*/
   align-items: center;
   justify-content: center;
 }
@@ -33,14 +32,26 @@ body,html {
   width: 10rem;
   text-align: center;
   color: white;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.7);
   text-shadow: 0 0 .5rem black;
 }
 
-.playing {
+.playing-top {
   transform: scale(1.1);
-  border-color: #f0f908;
-  box-shadow: 0 0 1rem #41FF28;
+  border-color: #255DFF;
+  box-shadow: 0 0 3rem #447ABF;
+}
+
+.playing-middle {
+  transform: scale(1.1);
+  border-color: #9000F8;
+  box-shadow: 0 0 3rem #6823FF;
+}
+
+.playing-bottom {
+  transform: scale(1.1);
+  border-color: #b4113f;
+  box-shadow: 0 0 1rem #ff4076;
 }
 
 kbd {
@@ -48,9 +59,23 @@ kbd {
   font-size: 4rem;
 }
 
-.sound {
+.sound-top {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  color: #c3ff7d;
+  color: #18C6FF;
+}
+
+.sound-middle {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #9F00FF;
+}
+
+.sound-bottom {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #FC3066;
 }
