@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "recordrtc": "^5.4.1",
+    "requirejs": "^2.3.3"
+  }
+}

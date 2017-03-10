@@ -3,6 +3,7 @@ window.addEventListener( 'keydown', playSound);
 function playSound(e) {
   const audio = document.querySelector(`audio[ data-key="${ e.keyCode }" ]`);
   const key = document.querySelector(`.key[ data-key="${ e.keyCode }" ]`);
+  const keyLetter = document.querySelector(`.key-letter[ data-key="${ e.keyCode }" ]`);
   var keyValue = e.key
 
   if(!audio) return; // stop the function from running all together.
@@ -13,7 +14,7 @@ function playSound(e) {
   	key.classList.add('playing-top');
   } else if( keyValue === 'a' || keyValue === 's' || keyValue === 'd' || keyValue === 'f' || keyValue === 'g' || keyValue === 'h' || keyValue === 'j' || keyValue === 'k' || keyValue === 'l' ) {
   	key.classList.add('playing-middle');
-  } else if( keyValue === 'z' || keyValue === 'x' || keyValue === 'c' || keyValue === 'v' || keyValue === 'b' || keyValue === 'n' || keyValue === 'm' ) {
+  } else if( keyValue === 'z' || keyValue === 'x' || keyValue === 'c' || keyValue === 'v' || keyValue === 'b' || keyValue === 'n' || keyValue === 'm' || keyValue === ' ' ) {
   	key.classList.add('playing-bottom');
   }
 }
